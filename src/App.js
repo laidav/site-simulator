@@ -1,8 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import "./models/LotRow"
+import LotRow from './models/LotRow';
 
 function App() {
+  const lotRow = new LotRow();
+
+  lotRow.append(3);
+  lotRow.append(4);
+
+  console.log(lotRow);
+
   return (
     <div className="App">
       <header className="App-header">
