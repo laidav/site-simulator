@@ -1,13 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import "./models/LotRow"
-import LotRow from './models/LotRow';
-import BlockNode from "./models/BlockNode";
-import lotRows from "./services/lotRowsSrvc"
+import blocks from "./services/blocksSrvc";
+import lotRows from "./services/lotRowsSrvc";
 
 function App() {
   console.log(lotRows);
+  console.log(blocks);
 
   return (
     <div className="App">
