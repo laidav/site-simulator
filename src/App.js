@@ -3,14 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 import "./models/LotRow"
 import LotRow from './models/LotRow';
+import BlockNode from "./models/BlockNode";
 
 function App() {
   const lotRow = new LotRow();
+  const blockNode = new BlockNode();
 
   lotRow.append(3);
   lotRow.append(4);
 
   console.log(lotRow);
+  console.log(blockNode);
 
   return (
     <div className="App">
