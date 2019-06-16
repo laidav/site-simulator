@@ -19,13 +19,10 @@ const blocksList = [
     }
   ];
 
-  const farnamsBlock = new BlockNode(blocksList[0]);
-  const jasonsBlock = new BlockNode(blocksList[1]);
   const davesBlock = new BlockNode(blocksList[2]);
+  const jasonsBlock = new BlockNode(blocksList[1], null, davesBlock);
+  const farnamsBlock = new BlockNode(blocksList[0], jasonsBlock, null);
 
-  farnamsBlock.firstChild = jasonsBlock;
-  jasonsBlock.nextSibling = davesBlock;
-
-  const blocks = [ farnamsBlock, jasonsBlock, davesBlock];
+  const blocks = [ farnamsBlock, jasonsBlock, davesBlock ];
 
   export default blocks;

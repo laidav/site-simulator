@@ -1,9 +1,7 @@
 export default class BlockNode {
-    constructor({ id, name, lotRowHeads = []}) {
-        this.id = id;
-        this.name = name;
-        this.lotRowHeads = lotRowHeads;
-        this.firstChild = null; 
-        this.nextSibling = null;
+    constructor(value, firstChild = null, nextSibling = null) {
+        this.value = value;
+        this.firstChild = firstChild; 
+        this.nextSibling = nextSibling;
     }
 }
