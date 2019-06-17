@@ -5,6 +5,7 @@ import Block from "./Block"
 
 function App() {
   console.log(neighborhoodTreeSrvc);
+  console.log(neighborhoodTreeSrvc.getLots(neighborhoodTreeSrvc.root));
 
   return (
     <div className="App">

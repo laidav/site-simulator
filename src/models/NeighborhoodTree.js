@@ -54,6 +54,22 @@ export default class NeighborhoodTree {
     return searcher.searchResults;
   }
 
+  getLots(refNode) {
+    const lotSearch = {
+      compare: (node) => {
+        if (node !== null) {
+          for (let i = 0; i < node.value.lotRows.length; i++) {
+            lotSearch.searchResults = lotSearch.searchResults.concat(node.value.lotRows[i].toArray());
+          }
+        }
+      },
+      searchDone: false,
+      searchResults: []
+    }
+
+    return this.dfsTraversal(lotSearch, refNode);
+  }
+
   getDepth(refNode) {
     const depthSearch = {
       compare: node => {
