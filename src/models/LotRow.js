@@ -7,9 +7,10 @@ export default class LotRow {
   /**
    * @param {Function} [comparatorFunction]
    */
-  constructor(comparatorFunction) {
+  constructor(className, comparatorFunction) {
     this.head = null;
     this.tail = null;
+    this.className = className;
     this.compare = new Comparator(comparatorFunction);
   }
 

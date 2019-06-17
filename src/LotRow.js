@@ -6,6 +6,7 @@ const LotRow = ({ data: lotRow }) => {
     return (
         <div>
             <List component={ Lot }
+                  className={`lotRow lotrow-${lotRow.className}`}
                   uniqueKey={"id"}
                   list={lotRow.toArray()}
             />  

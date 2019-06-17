@@ -82,10 +82,10 @@ const lotsList = [
     }
 ];
 
-const lotRow_1_4 = new LotRow();
-const lotRow_5_8 = new LotRow();
-const lotRow_9_16 = new LotRow();
-const lotRow_17_20 = new LotRow();
+const lotRow_1_4 = new LotRow("1-4");
+const lotRow_5_8 = new LotRow("5-8");
+const lotRow_9_16 = new LotRow("9-16");
+const lotRow_17_20 = new LotRow("17-20");
 
 const populateLotRow = (list, lotRow) => {
   list.forEach((lot) => {

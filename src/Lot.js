@@ -2,7 +2,7 @@ import React from "react";
 
 const Lot = ({ data: lot }) => {
     return (
-        <div>
+        <div className={"lot"}>
             { lot.value.id }
         </div>
     )

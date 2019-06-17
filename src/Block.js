@@ -5,7 +5,7 @@ import LotRow from "./LotRow";
 
 const Block = ({ data: blockNode }) => {
     return (
-        <div>  
+        <div className={blockNode.value.className}>  
           <span>{blockNode.value.name}</span>
           <List component={LotRow}
                 uniqueKey={"id"}

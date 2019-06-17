@@ -5,16 +5,19 @@ const blocksList = [
     { 
         id: 1, 
         name: "Farnam's Neighborhood",
+        className: "farnams-neighborhood",
         lotRows: [] 
     },
     {
         id: 2,
         name: "Jason's Block",
+        className: "jasons-block",
         lotRows: [lotRowsSrvc[0], lotRowsSrvc[1]]
     },
     {
         id: 3,
         name: "Dave's Block",
+        className: "daves-block",
         lotRows: [lotRowsSrvc[2], lotRowsSrvc[3]]
     }
   ];
