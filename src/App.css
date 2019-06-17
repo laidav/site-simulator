@@ -75,6 +75,7 @@
 }
 
 .selected-lot {
-  position: relative;
+  position: fixed;
   top: 30px;
+  right: 50px;
 }
