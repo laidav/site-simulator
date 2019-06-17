@@ -80,3 +80,17 @@
   right: 50px;
   width: 350px;
 }
+
+.selected-block {
+  position: fixed;
+  top: 400px;
+  right: 139px;
+  width: 271px;
+}
+
+.explainer {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  font-weight: bold;
+}

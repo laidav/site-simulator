@@ -16,14 +16,27 @@ class App extends Component {
     });
   };
 
+  selectBlock = (block) => {
+    this.setState({
+      selectedBlock: block
+    })
+  };
+
   render() {
 
-    const { selectLot } = this;
-    const { selectedLot } = this.state;
+    const { selectLot, selectBlock } = this;
+    const { selectedLot, selectedBlock } = this.state;
 
     return (
       <div className="App">
-        <Block data={neighborhoodTreeSrvc.root} selectLot={selectLot} />
+        <Block data={neighborhoodTreeSrvc.root} selectLot={selectLot} selectBlock={selectBlock} />
+        <p className={"explainer"}>* click one of the lots or block titles to select</p>
+        <div className={"selected-block"}>
+          <h2>Selected Block:</h2>
+          {
+            selectedBlock && <p>Block Name: {selectedBlock.value.name} </p>
+          }
+        </div>
         <div className={"selected-lot"}>
         <h2>Selected Lot:</h2>
         { 

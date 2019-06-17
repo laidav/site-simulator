@@ -2,11 +2,17 @@ import React from "react";
 import neighborhoodTreeSrvc from "../services/neighborhoodTreeSrvc";
 import List from "../List";
 import LotRow from "../LotRow/LotRow";
+import "./Block.css";
 
-const Block = ({ data: blockNode, selectLot }) => {
+const Block = ({ data: blockNode, selectLot, selectBlock }) => {
+
+    const handleClick = () => {
+      selectBlock(blockNode);
+    }
+
     return (
-        <div className={blockNode.value.className}>  
-          <h1>{blockNode.value.name}</h1>
+        <div className={`block ${blockNode.value.className}`}>  
+          <h1 onClick={handleClick}>{blockNode.value.name}</h1>
           <List component={LotRow}
                 uniqueKey={"id"}
                 list={blockNode.value.lotRows}
@@ -16,7 +22,7 @@ const Block = ({ data: blockNode, selectLot }) => {
             component={Block}
             uniqueKey={"id"}
             list={neighborhoodTreeSrvc.getChildren(blockNode)}
-            listItemProps={{selectLot}}
+            listItemProps={{selectLot, selectBlock}}
           />
         </div>
       ); 
