@@ -94,3 +94,7 @@
   left: 50px;
   font-weight: bold;
 }
+
+.farnams-neighborhood > h1 {
+  padding-left: 30px;
+}
