@@ -24,11 +24,14 @@ class App extends Component {
     return (
       <div className="App">
         <Block data={neighborhoodTreeSrvc.root} selectLot={selectLot} />
+        <h2>Selected Lot:</h2>
         { 
           selectedLot &&         
           <div className="selected-lot">
-            <p>Selected Lot: { selectedLot.value.id }</p>
-            <p></p>
+            <p>Lot Number: { selectedLot.value.id }</p>
+            <p>Lot Across: { selectedLot.across ? selectedLot.across.value.id : "null" }</p>
+            <p>Lot Diagonal: { selectedLot.across && selectedLot.across.previous ? selectedLot.across.previous.value.id : "null" }</p>
+            <p>Lot Diagonal: { selectedLot.across && selectedLot.across.next ? selectedLot.across.next.value.id : "null" }</p>
           </div> 
         }
       </div>
