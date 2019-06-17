@@ -73,3 +73,8 @@
 .daves-block .lot-row.lot-row-17-20 .lot {
   transform: rotate(180deg);
 }
+
+.selected-lot {
+  position: relative;
+  top: 30px;
+}

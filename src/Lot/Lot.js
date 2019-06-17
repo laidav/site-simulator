@@ -1,9 +1,13 @@
 import React from "react";
 import "./Lot.css";
 
-const Lot = ({ data: lot }) => {
+const Lot = ({ data: lot, selectLot }) => {
+    const handleClick = () => {
+        selectLot(lot);
+    };
+
     return (
-        <div className={"lot"}>
+        <div className={"lot"} onClick={handleClick}>
             { lot.value.id }
         </div>
     )

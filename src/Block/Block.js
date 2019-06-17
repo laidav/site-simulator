@@ -3,18 +3,20 @@ import neighborhoodTreeSrvc from "../services/neighborhoodTreeSrvc";
 import List from "../List";
 import LotRow from "../LotRow/LotRow";
 
-const Block = ({ data: blockNode }) => {
+const Block = ({ data: blockNode, selectLot }) => {
     return (
         <div className={blockNode.value.className}>  
           <h1>{blockNode.value.name}</h1>
           <List component={LotRow}
                 uniqueKey={"id"}
                 list={blockNode.value.lotRows}
+                listItemProps={{selectLot}}
           />  
           <List
             component={Block}
             uniqueKey={"id"}
             list={neighborhoodTreeSrvc.getChildren(blockNode)}
+            listItemProps={{selectLot}}
           />
         </div>
       ); 
