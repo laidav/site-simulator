@@ -1,7 +1,7 @@
 import React from "react";
-import neighborhoodTreeSrvc from "./services/neighborhoodTreeSrvc";
-import List from "./List";
-import LotRow from "./LotRow";
+import neighborhoodTreeSrvc from "../services/neighborhoodTreeSrvc";
+import List from "../List";
+import LotRow from "../LotRow/LotRow";
 
 const Block = ({ data: blockNode }) => {
     return (

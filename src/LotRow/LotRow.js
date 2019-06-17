@@ -1,6 +1,6 @@
 import React from "react";
-import List from "./List";
-import Lot from "./Lot";
+import List from "../List";
+import Lot from "../Lot/Lot";
 
 const LotRow = ({ data: lotRow }) => {
     return (
