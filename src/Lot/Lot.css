@@ -10,3 +10,7 @@
 .lot:hover {
   cursor: pointer;
 }
+
+.lot.active {
+  background: #819ae0;
+}

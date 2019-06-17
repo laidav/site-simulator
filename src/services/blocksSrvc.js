@@ -4,7 +4,7 @@ import BlockNode from "../models/BlockNode";
 const blocksList = [
     { 
         id: 1, 
-        name: "Farnam's Neighborhood",
+        name: "Farnam's Block",
         className: "farnams-neighborhood",
         lotRows: [] 
     },
