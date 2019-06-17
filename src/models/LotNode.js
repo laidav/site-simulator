@@ -6,7 +6,7 @@ export default class LotNode {
       this.across = across;
     }
 
-    getLeftTwoNeighbors() {
+    getPreviousTwoNeighbors() {
       const neighbors = [];
       let currentNode = this;
 
@@ -20,7 +20,7 @@ export default class LotNode {
       return neighbors;
     }
 
-    getRightTwoNeighbors() {
+    getNextTwoNeighbors() {
       const neighbors = [];
       let currentNode = this;
 

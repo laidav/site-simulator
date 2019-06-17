@@ -49,8 +49,8 @@ class App extends Component {
             <p>Lot Across: { selectedLot.across ? selectedLot.across.value.id : "null" }</p>
             <p>Lot Diagonal: { selectedLot.across && selectedLot.across.previous ? selectedLot.across.previous.value.id : "null" }</p>
             <p>Lot Diagonal: { selectedLot.across && selectedLot.across.next ? selectedLot.across.next.value.id : "null" }</p>
-            <p>2 Left Neighbors: { selectedLot.getLeftTwoNeighbors().map((node) => { return node.value.id}).join(",")}</p>
-            <p>2 Right Neighbors: { selectedLot.getRightTwoNeighbors().map((node) => { return node.value.id}).join(",")}</p>
+            <p>2 Previous Neighbors: { selectedLot.getPreviousTwoNeighbors().map((node) => { return node.value.id}).join(",")}</p>
+            <p>2 Next Neighbors: { selectedLot.getNextTwoNeighbors().map((node) => { return node.value.id}).join(",")}</p>
           </div> 
         }
 
