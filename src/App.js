@@ -29,7 +29,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Block data={neighborhoodTreeSrvc.root} selectLot={selectLot} selectBlock={selectBlock} />
+        <Block data={neighborhoodTreeSrvc.root} 
+               selectLot={selectLot} 
+               selectBlock={selectBlock} 
+               selectedBlock={selectedBlock} />
         <p className={"explainer"}>* click one of the lots or block titles to select</p>
         <div className={"selected-block"}>
           <h2>Selected Block:</h2>

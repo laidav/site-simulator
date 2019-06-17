@@ -4,8 +4,7 @@ import List from "../List";
 import LotRow from "../LotRow/LotRow";
 import "./Block.css";
 
-const Block = ({ data: blockNode, selectLot, selectBlock }) => {
-
+const Block = ({ data: blockNode, selectLot, selectBlock, selectedBlock }) => {
     const handleClick = () => {
       selectBlock(blockNode);
     }
@@ -16,13 +15,13 @@ const Block = ({ data: blockNode, selectLot, selectBlock }) => {
           <List component={LotRow}
                 uniqueKey={"id"}
                 list={blockNode.value.lotRows}
-                listItemProps={{selectLot}}
+                listItemProps={{selectLot, selectedBlock }}
           />  
           <List
             component={Block}
             uniqueKey={"id"}
             list={neighborhoodTreeSrvc.getChildren(blockNode)}
-            listItemProps={{selectLot, selectBlock}}
+            listItemProps={{selectLot, selectBlock, selectedBlock}}
           />
         </div>
       ); 

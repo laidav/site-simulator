@@ -1,7 +1,7 @@
 import React from "react";
 import "./Lot.css";
 
-const Lot = ({ data: lot, selectLot }) => {
+const Lot = ({ data: lot, selectLot, selectedBlock }) => {
     const handleClick = () => {
         selectLot(lot);
     };
