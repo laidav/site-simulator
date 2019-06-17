@@ -1,7 +1,7 @@
 export default class BlockNode {
-    constructor(value, firstChild = null, nextSibling = null) {
+    constructor(value, firstChild = null, rightSibling = null) {
         this.value = value;
         this.firstChild = firstChild; 
-        this.nextSibling = nextSibling;
+        this.rightSibling = rightSibling;
     }
 }

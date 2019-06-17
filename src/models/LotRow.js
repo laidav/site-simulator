@@ -1,7 +1,6 @@
 import LotNode from './LotNode';
 import Comparator from './Comparator';
 
-
 // Slightly modified from https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/doubly-linked-list
 
 export default class LotRow {

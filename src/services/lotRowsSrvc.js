@@ -97,6 +97,6 @@ populateLotRow(lotsList.slice(4,8), lotRow_5_8);
 populateLotRow(lotsList.slice(8,16), lotRow_9_16);
 populateLotRow(lotsList.slice(16,20), lotRow_17_20);
 
-const lotRows = [ lotRow_1_4, lotRow_5_8, lotRow_9_16, lotRow_17_20 ];
+const lotRowsSrvc = [ lotRow_1_4, lotRow_5_8, lotRow_9_16, lotRow_17_20 ];
 
-export default lotRows;
+export default lotRowsSrvc;

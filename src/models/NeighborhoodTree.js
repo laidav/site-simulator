@@ -1,22 +1,6 @@
-import BlockNode from "./models/BlockNode";
-
 export default class NeighborhoodTree {
-  constructor(NeighborhoodsList) {
-    const nodeMapper = new Map();
-
-    for (let i = 0; i < NeighborhoodsList.length; i++) {
-      nodeMapper.set(NeighborhoodsList[i].id, new BlockNode(NeighborhoodsList[i]));
-    }
-
-    for (let i = 0; i < NeighborhoodsList.length; i++) {
-      let node = nodeMapper.get(NeighborhoodsList[i].id);
-      node.firstChild = nodeMapper.get(NeighborhoodsList[i].first_child_id) || null;
-      node.rightSibling =
-        nodeMapper.get(NeighborhoodsList[i].right_sibling_id) || null;
-    }
-
-    this.root = nodeMapper.get(12);
-    this.nodeMapper = nodeMapper;
+  constructor(root) {
+    this.root = root;
   }
 
   getChildren(node) {
