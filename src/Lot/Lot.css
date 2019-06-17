@@ -1,0 +1,8 @@
+.lot {
+  height: 65px;
+  width: 65px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

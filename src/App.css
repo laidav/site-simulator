@@ -1,33 +1,55 @@
-.App {
-  text-align: center;
+.jasons-block > div {
+  padding-left: 268px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.daves-block {
+  position: relative;
+  top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(1) {
+  position: relative;
+  top: -188px;
+  left: 158px;
+  transform: rotate(90deg);
 }
 
-.App-link {
-  color: #61dafb;
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(2) {
+  position: relative;
+  top: -121px;
+  left: 91px;
+  transform: rotate(90deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(3) {
+  position: relative;
+  top: -62px;
+  left: 45px;
+  transform: rotate(73deg);
+  width: 35px;
+}
+
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(4) {
+  position: relative;
+  top: -16px;
+  left: 40px;
+  transform: rotate(39deg);
+  width: 35px;
+}
+
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(5),
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(6),
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(7),
+.daves-block .lot-row.lot-row-9-16 .lot:nth-child(8) {
+  position: relative;
+  left: 57px;
+}
+
+.daves-block .lot-row.lot-row-17-20 {
+  position: relative;
+  left: 265px;
+}
+
+.daves-block .lot-row.lot-row-17-20 .lot {
+  transform: rotate(180deg);
 }

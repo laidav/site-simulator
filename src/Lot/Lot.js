@@ -1,4 +1,5 @@
 import React from "react";
+import "./Lot.css";
 
 const Lot = ({ data: lot }) => {
     return (
