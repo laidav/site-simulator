@@ -1,6 +1,26 @@
 export default class NeighborhoodTree {
   constructor(root) {
     this.root = root;
+    this.lotMapper = new Map();
+
+    this._setlotMapper();
+    this._setAcross();
+  }
+
+  _setAcross() {
+    this.lotMapper.forEach((node, key, map) =>{
+      if (node.value.acrossId !== null) {
+        node.across = map.get(node.value.acrossId);
+      }
+    });
+  }
+
+  _setlotMapper() {
+    const lots = this.getLots(this.root);
+    
+    for (let i = 0; i < lots.length; i++) {
+      this.lotMapper.set(lots[i].value.id, lots[i]);
+    }
   }
 
   getChildren(node) {
@@ -65,7 +85,7 @@ export default class NeighborhoodTree {
       },
       searchDone: false,
       searchResults: []
-    }
+    };
 
     return this.dfsTraversal(lotSearch, refNode);
   }

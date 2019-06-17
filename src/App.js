@@ -4,8 +4,7 @@ import neighborhoodTreeSrvc from "./services/neighborhoodTreeSrvc";
 import Block from "./Block"
 
 function App() {
-  console.log(neighborhoodTreeSrvc);
-  console.log(neighborhoodTreeSrvc.getLots(neighborhoodTreeSrvc.root));
+  console.log(neighborhoodTreeSrvc.lotMapper.get(7));
 
   return (
     <div className="App">

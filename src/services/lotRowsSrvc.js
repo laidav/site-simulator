@@ -3,81 +3,82 @@ import LotRow from '../models/LotRow';
 const lotsList = [
     {
         id: 1,
-        across: null
+        acrossId: null
     },
     {
         id: 2,
-        across: null
+        acrossId: null
     },
     {
         id: 3,
-        across: null
+        acrossId: null
     },
     {
         id: 4,
-        across: null
+        acrossId: null
     },
     {
         id: 5,
-        across: 12
+        acrossId: 12
     },
     {
         id: 6,
-        across: 11
-    },        {
+        acrossId: 11
+    },        
+    {
         id: 7,
-        across: 10
+        acrossId: 10
     },
     {
         id: 8,
-        across: 9
+        acrossId: 9
     },
     {
         id: 9,
-        across: 8
+        acrossId: 8
     },
     {
         id: 10,
-        across: 7
+        acrossId: 7
     },
     {
         id: 11,
-        across: 6
+        acrossId: 6
     },
     {
         id: 12,
-        across: 5
+        acrossId: 5
     },
     {
         id: 13,
-        across: 5
+        acrossId: 5
     },
     {
         id: 14,
-        across: 5
+        acrossId: 5
     },
     {
         id: 15,
-        across: 5
+        acrossId: 5
     },
     {
         id: 16,
-        across: 1
+        acrossId: 1
     },        {
         id: 17,
-        across: null
+        acrossId: null
     },
     {
         id: 18,
-        across: null
+        acrossId: null
     },
     {
         id: 19,
-        across: null
+        acrossId: null
     },
     {
         id: 20,
-        across: null
+        acrossId: null
     }
 ];
 
