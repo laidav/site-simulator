@@ -74,7 +74,7 @@ export default class NeighborhoodTree {
     return searcher.searchResults;
   }
 
-  getLots(refNode) {
+  getLots(blockNode) {
     const lotSearch = {
       compare: (node) => {
         if (node !== null) {
@@ -87,7 +87,7 @@ export default class NeighborhoodTree {
       searchResults: []
     };
 
-    return this.dfsTraversal(lotSearch, refNode);
+    return this.dfsTraversal(lotSearch, blockNode);
   }
 
   getDepth(refNode) {
